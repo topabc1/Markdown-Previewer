@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer</title>
+    <link rel="stylesheet" href="../previewer/previewer.css" />
+    <script src="../previewer/previewer.js"></script>
+</head>
+<body>
+    
+    <script src="https://kit.fontawesome.com/6c9ee3040f.js" crossorigin="anonymous"></script>
+
+	<div id='editor-container'>
+		<div id='editor-header'>
+			<i class="fa-solid fa-fire"></i>
+			<h1>Editor</h1>
+			<div id='editor-expand-button-div'>
+				<button type='button'><i class="fa-solid fa-maximize"></i></button>
+			</div>
+		</div>
+    <textarea id='editor'># Welcome to my JavaScript Markdown Previewer!
+
+## This is a sub-heading...
+### And here's some other cool stuff:
+
+Heres some code, `<div></div>`, between 2 backticks.
+
+```
+// This is multi-line code:
+
+function anotherExample(firstLine, lastLine) {
+    if (firstLine == '```' && lastLine == '```') {
+        return multiLineCode;
+    }
+}
+```
+
+You can also make text **bold**... whoa!
+Or _italic_.
+Or... wait for it... **_both!_**
+And feel free to go crazy ~~crossing stuff out~~.
+
+There's also [links](https://www.freecodecamp.org), and
+> Block Quotes!
+
+And if you want to get really crazy, even tables:
+Wild Header | Crazy Header | Another Header?
+----------------|------------------|---------------------
+Your content can | be here, and it | can be here...
+And here. | Okay. | I think we get it.
+
+- And of course there are lists.
+    - Some are bulleted.
+        - With different indentation levels.
+            - That look like this.
+
+
+1. And there are numbered lists too.
+1. Use just 1s if you want!
+1. And last but not least, let's not forget embedded images:
+
+![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
+    </textarea>
+  </div>
+
+  <div id='previewer-container'>
+		<div id='previewer-header'>
+			<i class="fa-solid fa-fire"></i>
+			<h1>Previewer</h1>
+			<div id='previewer-expand-button-div'>
+				<button type='button'><i class="fa-solid fa-maximize"></i></button>
+			</div>
+		</div>
+		
+		<div id='preview'></div>
+	</div>
+    
+</body>
+</html>
